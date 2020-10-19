@@ -1,1 +1,304 @@
-/* Put your style information here! */
+* {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    width: 100%;
+    font-size: 1.25vw;
+}
+title {
+    display: none;
+}
+.container {
+    flex-direction: row;
+}
+.logoContainer {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 5vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    flex: 1;
+}
+.logo {
+    width: 10vw;
+    height: 10vw;
+}
+.cartContainer {
+    width: 5vw;
+    height: 5vw;
+    justify-content: center;
+    align-items: center;
+}
+.cart {
+    width: 4.5vw;
+    height: 4vw;
+}
+.clickables {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 3vw;
+    padding-bottom: 4vh;
+    padding-top: 4vh;
+    align-self: flex-end;
+    flex: 1;
+}
+.background {
+    height: 40vw; 
+    background-image: url("images/pizza_cover.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: 1s ease;
+}
+.background:hover{
+    -webkit-transform: scale(.97);
+    -ms-transform: scale(.97);
+    transform: scale(.97);
+    transition: 0.5s ease;
+}
+.clicker {
+    padding-right: 5vw;
+    text-decoration-line: none;
+}
+.clicker:hover {
+    text-decoration-line: underline;
+}
+.info {
+    align-items: flex-end;
+    padding-right: 3vw;
+}
+.menu {
+    flex-direction: row;
+    margin-top: 5vw;
+    margin-bottom: 1vw;
+    justify-content: flex-start;
+    align-items: center;
+}
+.menuTitle {
+    height: 5vw;
+    width : 15vw;
+    padding-left: 5vw;
+}
+.buttonBar {
+    flex-direction: row;
+    margin-bottom: 3vw;
+    justify-content: flex-end;
+    align-items: center;
+}
+button {
+    margin-right: 5vw;
+    padding: 1vw;
+    background-color: #A21C01;
+    color: white;
+    font-size: 1.5vw;
+}
+button:hover {
+    background-color: #c02303;
+}
+.itemCols {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.category {
+    width: 45%;
+    height: 45%;
+    margin-bottom: 5vw;
+    -webkit-filter: brightness(60%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}     
+.category:hover {
+    -webkit-filter: brightness(100%);
+}
+footer {
+    background-color: #A6A3A3;
+    height: 5vw;
+    justify-content: center;
+}
+.footerContainer {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.footerItem {
+    padding-right: 10vw;
+    color: white;
+    font-size: 1vw;
+}
+.footerItem:hover {
+    text-decoration-line: underline;
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        font-size: 2vw;
+    }
+    .logo {
+        width: 15vw;
+        height: 15vw;
+    }
+    .cart {
+        width: 7vw;
+        height: 6vw;
+    }
+    .logoContainer {
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 5vw;
+        padding-top: 3vw;
+    }
+    .background {
+        height: 40vw; 
+        background-size: 100%;
+        background-position: center;
+    }
+    .clickables {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 3vw;
+        padding-bottom: 0;
+    }
+    .clicker {
+        padding-right: 5vw;
+        text-decoration-line: underline;
+    }
+    .info {
+        align-items: flex-end;
+        padding-right: 3vw;
+    }
+    .menu {
+        margin-bottom: 5vw;
+    }
+    button {
+        font-size: 2vw;
+    }
+    .itemCols {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .category {
+        width: 45%;
+        height: 45%;
+        margin-bottom: 5vw;
+    }     
+    footer {
+        background-color: #A6A3A3;
+        height: 10vw;
+        justify-content: center;
+    }
+    .footerItem {
+        padding-right: 3rem;
+        color: white;
+        font-size: 2vw;
+        text-decoration-line: underline;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    body {
+        font-size: 3vw;
+    }
+    .logo {
+        width: 20vw;
+        height: 20vw;
+    }
+    .cartContainer {
+        width: 10vw;
+        height: 10vw;
+        justify-content: center;
+        align-items: center;
+    }
+    .cart {
+        width: 10vw;
+        height: 9vw;
+        max-width: none;
+    }
+    .logoContainer {
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 2vh;
+        padding-bottom: 1vh;
+    }
+    .background {
+        height: 40vw; 
+        background-size: 100%;
+        background-position: center;
+        background-image: url("images/pizza_cover.png");
+        background-repeat: no-repeat;
+    }
+    .clickables {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 3vw;
+    }
+    .info {
+        align-items: flex-end;
+        padding-right: 3vw;
+    }
+    .menu {
+        flex-direction: row;
+        margin-bottom: 3vw;
+        margin-top: 10vw;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .buttonBar {
+        flex-direction: row;
+        margin-bottom: 3vw;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .menuTitle {
+        height: 8vw;
+        width : 25vw;
+        padding-left: 5vw;
+    }
+    button {
+        margin-right: 5vw;
+        padding: 2vw 2vw;
+        background-color: #A21C01;
+        color: white;
+        font-size: 2vw;
+    }
+    .itemCols {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .category {
+        width: 100%;
+        height: 45%;
+        margin-bottom: 3vw;
+    }
+    footer {
+        background-color: #A6A3A3;
+        height: 15vw;
+        justify-content: center;
+    }
+    .footerContainer {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .footerItem {
+        padding-right: 10vw;
+        color: white;
+        font-size: 3vw;
+        text-decoration-line: underline;
+    }
+}
